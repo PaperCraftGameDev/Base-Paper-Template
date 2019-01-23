@@ -189,21 +189,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &25806810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 25806805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 787f2b3237de6a54d8a48469b83a1f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.1
-  rotSpeed: 1
-  frontOfStage: -9
-  SpriteObject: {fileID: 964431905}
 --- !u!1 &235107597
 GameObject:
   m_ObjectHideFlags: 0
