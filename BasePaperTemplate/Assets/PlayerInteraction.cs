@@ -17,7 +17,10 @@ public class PlayerInteraction : MonoBehaviour {
         {
             if(isTalking)
             {
-                FindObjectOfType<DialogueManager>().DisplayNextSentence();
+                if(!FindObjectOfType<DialogueManager>().DisplayNextSentence())
+                {
+                    isTalking = false;
+                }
             }
             else
             {

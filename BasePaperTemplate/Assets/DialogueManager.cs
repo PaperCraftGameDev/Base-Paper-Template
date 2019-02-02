@@ -29,17 +29,21 @@ public class DialogueManager : MonoBehaviour {
         DisplayNextSentence();
     }
 
-    public void DisplayNextSentence()
+    //Call to display the next message in a dialogue
+    //Returns true if there are still sentences in the dialogue
+    //Returns false when the dialogue is complete
+    public bool DisplayNextSentence()
     {
         if(sentences.Count == 0)
         {
             EndDialogue();
-            return;
+            return false;
         }
 
         string currentSentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currentSentence));
+        return true;
     }
 
     IEnumerator TypeSentence(string sentence)
